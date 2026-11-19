@@ -9,7 +9,9 @@ import { Hero } from './components/Hero';
 import { ProductCatalog } from './components/ProductCatalog';
 import { ProductModal } from './components/ProductModal';
 import { QuoteDrawer } from './components/QuoteDrawer';
-import { SimpleLeadChatWidget } from './components/chat/SimpleLeadChatWidget';
+import { CorporateChatWidget } from './components/chat/CorporateChatWidget';
+// Backup: Minimal text-prompt chatbot (no AI, direct WhatsApp flow)
+// import { SimpleLeadChatWidget } from './components/chat/SimpleLeadChatWidget';
 import {
   PACKAGING_CATALOG,
   type FinishOption,
@@ -221,8 +223,11 @@ export default function App() {
         onProceedToEnquiry={handleProceedFromDrawer}
       />
 
-      {/* Floating B2B Corporate Gifting Quick WhatsApp Enquiry Assistant */}
-      <SimpleLeadChatWidget />
+      {/* Default: Full-fledged B2B Corporate Gifting AI Consultant with Gemini Flash-Lite & Offerings */}
+      <CorporateChatWidget />
+
+      {/* Backup Option: Minimal text-prompt chatbot without AI (uncomment to switch) */}
+      {/* <SimpleLeadChatWidget /> */}
     </div>
   );
 }
