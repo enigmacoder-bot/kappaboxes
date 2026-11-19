@@ -43,6 +43,7 @@ export const ipRateLimiter = rateLimit({
   max: config.rateLimit.maxIpRequests,
   standardHeaders: true,
   legacyHeaders: false,
+  validate: { trustProxy: false, xForwardedForHeader: false },
   message: {
     error: 'Too many requests from this IP address. Please try again after 15 minutes.',
   },

@@ -515,6 +515,7 @@ var ipRateLimiter = rateLimit({
   max: config.rateLimit.maxIpRequests,
   standardHeaders: true,
   legacyHeaders: false,
+  validate: { trustProxy: false, xForwardedForHeader: false },
   message: {
     error: "Too many requests from this IP address. Please try again after 15 minutes."
   }
@@ -1064,7 +1065,8 @@ if (config.isProduction && !process.env.VERCEL) {
 app.use((err, _req, res, _next) => {
   console.error("[Unhandled Server Error]:", err.message || err);
   res.status(500).json({
-    error: "An unexpected server error occurred."
+    error: "An unexpected server error occurred.",
+    message: err.message || String(err)
   });
 });
 var isDirectRun = Boolean(process.argv[1]) && !process.argv.includes("--test") && (process.argv[1].endsWith("server/index.ts") || process.argv[1].endsWith("server\\index.ts") || process.argv[1].endsWith("server/index.js") || process.argv[1].endsWith("server\\index.js"));

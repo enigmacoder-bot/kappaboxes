@@ -43,6 +43,7 @@ app.use((err: any, _req: express.Request, res: express.Response, _next: express.
   console.error('[Unhandled Server Error]:', err.message || err);
   res.status(500).json({
     error: 'An unexpected server error occurred.',
+    message: err.message || String(err),
   });
 });
 
