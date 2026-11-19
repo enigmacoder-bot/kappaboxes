@@ -35,7 +35,10 @@ export const config = {
   },
 
   // CORS
-  allowedOrigins: (process.env.ALLOWED_ORIGINS || 'http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000')
+  allowedOrigins: (
+    process.env.ALLOWED_ORIGINS ||
+    'http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,https://kappaboxes-nu.vercel.app,https://kappaboxes.vercel.app'
+  )
     .split(',')
-    .map((s) => s.trim()),
+    .map((s) => s.trim().replace(/\/$/, '')),
 };

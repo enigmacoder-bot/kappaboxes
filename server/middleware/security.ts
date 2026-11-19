@@ -7,10 +7,23 @@ import { sessionsRepo } from '../db/client';
 
 export const corsMiddleware = cors({
   origin: (origin, callback) => {
-    // Allow requests with no origin (like mobile apps or curl) or if origin is in allowlist
-    if (!origin || config.allowedOrigins.includes(origin) || !config.isProduction) {
+    // Allow requests with no origin (like mobile apps, curl, or server-side calls)
+    if (!origin) {
+      return callback(null, true);
+    }
+
+    const cleanOrigin = origin.replace(/\/$/, '');
+    const isAllowed =
+      !config.isProduction ||
+      config.allowedOrigins.includes(cleanOrigin) ||
+      cleanOrigin.endsWith('.vercel.app') ||
+      cleanOrigin.includes('localhost') ||
+      cleanOrigin.includes('127.0.0.1');
+
+    if (isAllowed) {
       callback(null, true);
     } else {
+      console.warn(`[CORS] Blocked request from origin: ${origin}`);
       callback(new Error('Blocked by CORS policy'));
     }
   },

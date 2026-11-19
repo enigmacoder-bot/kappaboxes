@@ -10,6 +10,9 @@ const __dirname = path.dirname(__filename);
 
 export const app = express();
 
+// Trust reverse proxy (Vercel, Cloudflare, AWS ALB) for accurate IP detection in rate limiting
+app.set('trust proxy', 1);
+
 // 1. Basic security & headers
 app.use(helmetMiddleware);
 app.use(corsMiddleware);
@@ -25,8 +28,8 @@ app.use('/api', ipRateLimiter);
 app.use('/api', apiRouter);
 app.use(apiRouter);
 
-// 5. In production, serve the Vite build output
-if (config.isProduction) {
+// 5. In production environments outside Vercel (e.g. self-hosted Node/Docker), serve Vite build output
+if (config.isProduction && !process.env.VERCEL) {
   const distPath = path.resolve(__dirname, '../dist');
   app.use(express.static(distPath));
 
