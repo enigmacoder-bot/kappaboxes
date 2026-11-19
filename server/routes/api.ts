@@ -12,8 +12,8 @@ import { sessionRateLimiter, verifyTurnstileToken } from '../middleware/security
 
 export const apiRouter = Router();
 
-// 1. Health check
-apiRouter.get('/health', (_req: Request, res: Response) => {
+// 1. Health check & Root API Info
+apiRouter.get(['/', '/health', '/api'], (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     service: 'Meridian Corporate Gifting Assistant API',

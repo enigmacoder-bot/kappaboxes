@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "server": "tsx server/index.ts",
-    "build": "vite build",
+    "build:server": "esbuild server/index.ts --bundle --platform=node --format=esm --target=node20 --outfile=api/index.js --packages=external",
+    "build": "vite build && npm run build:server",
     "preview": "vite preview",
     "start": "tsx server/index.ts",
     "test": "tsx --test src/**/*.test.ts server/**/*.test.ts tests/**/*.test.ts",
@@ -20,6 +21,7 @@
     "@vitejs/plugin-react": "^6.1.1",
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
+    "esbuild": "^0.28.2",
     "express": "^4.21.2",
     "express-rate-limit": "^8.7.4",
     "helmet": "^8.3.0",
