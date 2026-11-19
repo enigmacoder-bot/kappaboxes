@@ -9,7 +9,7 @@ import { Hero } from './components/Hero';
 import { ProductCatalog } from './components/ProductCatalog';
 import { ProductModal } from './components/ProductModal';
 import { QuoteDrawer } from './components/QuoteDrawer';
-import { CorporateChatWidget } from './components/chat/CorporateChatWidget';
+import { SimpleLeadChatWidget } from './components/chat/SimpleLeadChatWidget';
 import {
   PACKAGING_CATALOG,
   type FinishOption,
@@ -221,8 +221,8 @@ export default function App() {
         onProceedToEnquiry={handleProceedFromDrawer}
       />
 
-      {/* Floating B2B Corporate Gifting Sales Assistant */}
-      <CorporateChatWidget />
+      {/* Floating B2B Corporate Gifting Quick WhatsApp Enquiry Assistant */}
+      <SimpleLeadChatWidget />
     </div>
   );
 }
