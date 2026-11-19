@@ -1,0 +1,6 @@
+{
+  "name": "KappaBoxes",
+  "description": "KappaBoxes is a premier bespoke packaging atelier and rigid box manufacturer headquartered in Bengaluru. Custom corporate gifting hampers, festive gift boxes, and precision packaging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

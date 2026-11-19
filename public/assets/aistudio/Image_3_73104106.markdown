@@ -1,0 +1,200 @@
+---
+name: Vibrant Packaging System
+colors:
+  surface: '#fcf9f8'
+  surface-dim: '#dcd9d9'
+  surface-bright: '#fcf9f8'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f6f3f2'
+  surface-container: '#f0eded'
+  surface-container-high: '#eae7e7'
+  surface-container-highest: '#e5e2e1'
+  on-surface: '#1b1c1c'
+  on-surface-variant: '#5c403c'
+  inverse-surface: '#303030'
+  inverse-on-surface: '#f3f0ef'
+  outline: '#916f6b'
+  outline-variant: '#e6bdb8'
+  surface-tint: '#bf0716'
+  primary: '#a3000f'
+  on-primary: '#ffffff'
+  primary-container: '#cc181e'
+  on-primary-container: '#ffe0dc'
+  inverse-primary: '#ffb4ab'
+  secondary: '#006497'
+  on-secondary: '#ffffff'
+  secondary-container: '#58b8ff'
+  on-secondary-container: '#00476e'
+  tertiary: '#00528a'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#006bb1'
+  on-tertiary-container: '#d9e8ff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdad6'
+  primary-fixed-dim: '#ffb4ab'
+  on-primary-fixed: '#410002'
+  on-primary-fixed-variant: '#93000d'
+  secondary-fixed: '#cce5ff'
+  secondary-fixed-dim: '#92ccff'
+  on-secondary-fixed: '#001d31'
+  on-secondary-fixed-variant: '#004b73'
+  tertiary-fixed: '#d1e4ff'
+  tertiary-fixed-dim: '#9dcaff'
+  on-tertiary-fixed: '#001d35'
+  on-tertiary-fixed-variant: '#00497c'
+  background: '#fcf9f8'
+  on-background: '#1b1c1c'
+  surface-variant: '#e5e2e1'
+typography:
+  display-lg:
+    fontFamily: EB Garamond
+    fontSize: 48px
+    fontWeight: '600'
+    lineHeight: 56px
+  display-lg-mobile:
+    fontFamily: EB Garamond
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+  headline-lg:
+    fontFamily: EB Garamond
+    fontSize: 36px
+    fontWeight: '600'
+    lineHeight: 44px
+  headline-lg-mobile:
+    fontFamily: EB Garamond
+    fontSize: 26px
+    fontWeight: '600'
+    lineHeight: 34px
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '700'
+    lineHeight: 28px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.08em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.05em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  margin: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system expresses a vibrant, reliable, and approachable identity tailored for custom corporate gifting and packaging manufacturing. The visual aesthetic fuses high-clarity commercial minimalism with energetic, high-contrast branding cues derived from tangible packaging elements: precise corners, clean paperboard finishes, and dynamic highlight colors.
+
+Key attributes:
+- **Trustworthy & Industrious:** Crisp surfaces, clean structured layouts, and legible technical specifications evoke industrial precision and professional manufacturing reliability.
+- **Celebratory & Vibrant:** Bold, primary scarlet red paired with vivid royal cyan brings excitement and festive energy suited for corporate hampers, celebratory kits, and brand packaging.
+- **Modern Commercial Utility:** Generous negative space, light gray section grounding, and crisp typographic hierarchy keep commercial catalogs readable and conversion-focused.
+
+## Colors
+
+The palette revolves around high visual impact against immaculate white canvases:
+
+- **Primary Red (`#cc181e`):** The signature brand anchor used for primary call-to-action buttons, key headline emphasis words, active navigation indicators, and prominent floating action items.
+- **Secondary Cyan/Royal Blue (`#0088cc`):** Reflects the brand's 3D logo box identity; utilized for secondary section headers, category indicators, badges, and informational highlights.
+- **Neutral Dark Charcoal (`#222222`):** Delivers uncompromising readability for primary text, titles, and structural labels, avoiding the stark harshness of pure black.
+- **Surface & Backgrounds:** Crisp pure white (`#ffffff`) serves as the base canvas, punctuated by ultra-light cool grays (`#f5f6f8` and `#f9f9f9`) for alternating grid sections, card containers, and input field backgrounds.
+- **Borders & Dividers:** Subtle, low-contrast slate gray (`#e5e7eb`) keeps cards and item grids neat without creating heavy visual partitions.
+
+## Typography
+
+The typographical strategy combines an editorial serif for primary display moments with a contemporary, high-clarity sans-serif for UI, catalog navigation, and body copy:
+
+- **Editorial Serifs for Hero Headlines (`EB Garamond`):** Honors the tactile elegance of premium gift packaging and bespoke fabrication. Used selectively in hero titles and section headers where the final word or phrase often accents with the primary red token.
+- **Functional Geometric Sans (`Plus Jakarta Sans`):** Provides approachable, crystal-clear readability across navigation menus, product descriptions, inquiry forms, and contact cards.
+- **Eyebrow Headers (`label-md`):** Set in uppercase with generous tracking (`0.08em`) to demarcate category breadcrumbs and micro-headings before major sections.
+
+## Layout & Spacing
+
+A structured 12-column responsive fluid grid aligns product imagery, inquiry details, and technical specifications:
+
+- **Desktop (1024px+):** Max layout container capped at 1280px to retain density; 12 columns with `1.5rem` gutters and `2rem` outer page margins. Section vertical spacing expands to `4rem` to give imagery breathing room.
+- **Tablet (768px - 1023px):** 8 columns with `1rem` gutters and `1.5rem` outer page margins. Cards collapse from 3 or 4 columns down to 2 columns.
+- **Mobile (< 768px):** 4 columns with `0.75rem` gutters and `1rem` edge margins. Grids reflow strictly to single or dual-column stacked arrangements. Vertical margins between sections reduce to `2.5rem`.
+
+## Elevation & Depth
+
+Visual hierarchy prioritizes tactile cardboard stability—crisp, clean, and physically grounded rather than overly soft or blurry:
+
+- **Flat Surface Grounding:** Base cards and module panels rely predominantly on light surface tinting (`#f9f9f9` / `#ffffff`) accompanied by delicate 1px border lines (`#e5e7eb`) instead of heavy dropshadows.
+- **Interactive Elevation:** Interactive cards and product tiles utilize a shallow, crisp shadow (`0 4px 12px rgba(0, 0, 0, 0.06)`) on hover, shifting upward by 2px to signal affordance.
+- **Floating Controls:** High-priority floating action buttons (such as quick inquiry or scroll-to-top buttons) utilize a directional vibrant shadow (`0 6px 16px rgba(204, 24, 30, 0.35)`) that echoes the primary brand accent.
+
+## Shapes
+
+The shape system adopts a soft, calibrated radius (`roundedness: 1`), embodying the structural geometry of rigid paper boxes and gift cartons:
+
+- **Base Components (Inputs, Buttons, Cards):** Standard radius of `0.25rem` (4px) to `0.375rem` (6px) conveys clean industrial cuts and crisp packaging folds.
+- **Surface Panels & Modals:** `rounded-lg` (0.5rem / 8px) creates gentle containment without becoming excessively playful.
+- **Icon Circles & Indicator Badges:** Full pill/circular shapes (`rounded-full`) are reserved exclusively for circular contact icon tiles, floating scroll toggles, and step badge counters.
+
+## Components
+
+### Buttons
+- **Primary Action (e.g., "Enquiry Now"):** Solid `#cc181e` background, pure white bold text, subtle 4px border radius. Hover state shifts to `#b01217` with a slight 2px upward transition.
+- **Secondary Action:** Transparent fill with 1.5px solid `#0088cc` border, royal blue text. On hover, transitions to solid `#0088cc` fill with white text.
+- **Floating Action Buttons:** Circular (`rounded-full`) solid red buttons positioned at page anchors for immediate contact or scroll navigation.
+
+### Cards & Showcase Tiles
+- **Product Tiles:** Clean white background surrounded by a 1px `#e5e7eb` boundary. Images maintain sharp 1:1 or 4:3 ratios without inner border radii. Direct CTA buttons sit anchored beneath each product frame.
+- **Info / Contact Blocks:** Set on soft `#f8f9fa` backgrounds with circular red icon badges (`3rem` diameter) housing crisp white iconography on the left, paired with bold charcoal typography.
+
+### Tabs & Navigation Filters
+- **Category Selectors (e.g., Corporate Gifts, Hampers):** Horizontal pill or underlined list. The active state displays bold text with a 2.5px solid primary red underline; inactive tabs remain neutral dark charcoal (`#555555`) with a transparent indicator.
+
+### Form Inputs
+- **Textfields & Areas:** Crisp white background with a 1px border in `#d1d5db`, `0.25rem` corner radius, and `0.75rem 1rem` inner padding. Focus states highlight with a clean `#0088cc` outline ring and border transition.
+
+### Chips & Badges
+- **Status & Spec Tags:** Compact tags with `0.25rem` radius, light gray or pastel cyan tint (`#e6f4fa`), and dark cyan typography (`#006699`) for secondary metadata such as box dimensions and material grades.

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "EB Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-brand-red: #cc181e;
+  --color-brand-red-dark: #a3000f;
+  --color-brand-cyan: #0088cc;
+  --color-brand-cyan-dark: #006497;
+  --color-ink: #222222;
+  --color-surface-warm: #fcf9f8;
+  --color-surface-soft: #f8f9fa;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #222222;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
